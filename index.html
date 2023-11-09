@@ -1,1 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Manager</title>
+    <link href="style.css" rel="stylesheet" >
+    <script src="main.js"></script>
+</head>
 
+<body>
+    <div id="container">
+        <div id="submit_task_form" style="display: none;margin-top: 100px;">
+            <input class="center inp" id="taskname" type="text" placeholder="Task Name">
+            <textarea class="center inp" id="description" rows="6" placeholder="Description"></textarea>
+            <input class="center inp" id="assignee" type="text" placeholder="Assignee">
+            <input class="center inp" id="deadline" type="datetime-local" placeholder="Task Deadline"> <!--[1]-->
+            <select class="center2 inp" id="task-label">
+                <option value="">- Status -</option>
+                <option value="urgent">Urgent</option>
+                <option value="complete">Complete</option>
+                <option value="onhold">On Hold</option>
+            </select>
+            <button id="submit_btn_add" class="center2 inp" onclick="submit_task(false)">Submit Task</button>
+            <button id="submit_btn_edit" class="center2 inp" onclick="submit_task(true)">Submit Task</button>
+        </div>
+        <div id="top">
+            <input id="filter" type="search" placeholder="Search Tasks">
+            <button id="add_task_btn" onclick="display_form(false)">Add Task</button>
+            <button id="edit_task_btn" onclick="display_form(true)">Edit Task</button>
+            <button id="delete_task_btn" onclick="delete_task()">Delete Task</button>
+        </div>
+        <div id="tasks" style="cursor: default;"></div>
+    </div>
+</body>
+
+</html>
+
+<!--
+References:
+[1] https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local
+-->
