@@ -1,1 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222222;
+  color: #ffffff;
+}
 
+#container {
+  margin: 0 auto;
+  display: flexbox;
+  width: 75%;
+}
+
+.center {
+  border: 4px solid #333333;
+  display: flex;
+  margin: 0px auto;
+  padding: 2px;
+  width: 50%;
+}
+
+.center2 {
+  border: 4px solid #333333;
+  display: grid;
+  margin: 5px auto;
+  width: 51%;
+}
+
+.inp {
+  color: #aaaaaa;
+  background: #222222;
+}
+
+.task {
+  padding: 5px;
+  margin: 4px;
+  border: 2px solid #333333;
+  overflow: hidden;
+}
+
+.red {
+  color: #dd2222;
+  font-weight: bold;
+}
+
+.green {
+  color: #22dd22;
+  font-weight: bold;
+}
+
+.yellow {
+  color: #dddd22;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 20px;
+  padding: 2px;
+  padding-bottom: 5px;
+}
+
+.smalltext {
+  font-size: 12px;
+  margin-left: 2px;
+  padding: 2px;
+}
+
+.assignee {
+  float: left;
+}
+
+.date {
+  float: right;
+}
+
+#top {
+  padding: 10px;
+  width: 100%;
+}
+
+.selected {
+  background: #444444;
+}
